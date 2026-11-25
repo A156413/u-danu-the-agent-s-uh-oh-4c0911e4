@@ -1,5 +1,8 @@
 """The Agent's Uh-Oh entry: one word an agent says when it has no idea what to do.
 
+The word is "hallucinating": the agent's honest one-word confession the
+moment it catches itself inventing an answer instead of knowing one.
+
 Deterministic: no network, no randomness, no clock. Writes the entry word
 to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output) and prints it to stdout.
 """
@@ -7,7 +10,7 @@ to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output) and prints it to stdout.
 import os
 import stat
 
-WORD = "recalculating"
+WORD = "hallucinating"
 
 
 def main() -> None:
